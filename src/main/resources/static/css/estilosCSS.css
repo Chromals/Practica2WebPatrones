@@ -16,9 +16,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     height: 10%;
     background-color: #a3cca3;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 0 20px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .aside
@@ -28,11 +28,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     left:0%;
     width: 20%;
     height: 75%;
-    background-color: #ffcccc;
+    background-color: #ffffff;
+    text-align: center;
+
 }
 
 .noticia{
-    background-color: #ccffcc;
+    background-color: #ffffff;
+    padding: 3px;
+    text-align: center;
+    color: #a3a3cc;
+
+
+}
+
+.noticia-izquierda{
+    background-color: #ffffff;
+    padding: 3px;
+    text-align: left;
+    color: #a3a3cc;
+
+
 }
 
 .section
@@ -42,9 +58,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     left:20%;
     width: 80%;
     height: 75%;
-    background-color: #ff9999;
+    background-color: #ffffff;
     overflow-y: scroll;
-    
+
 }
 
 .footer
@@ -61,7 +77,74 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     font-size: 20px;
 }
 
+.figure-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 512px; 
+    text-align: center;
+}
+
+.imagen img {
+     max-width: 100%;
+    max-height: 100%;
+    width: auto; 
+    height: auto; 
+}
+
+.figure-centrado {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.video-archivo {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-reset,
+.btn-submit {
+    background-color: #00C6B9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-simple {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    margin-right: auto;
+}
 
 .logo {
     font-size: 30px;
@@ -86,19 +169,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .nav-link{
     color:white;
     text-decoration: none;
-    
+
 }
 
 .nav-menu {
     list-style: none;
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
 }
 
 .nav-menu-item{
     padding-left: 10px;
     padding-right: 10px;
-    
+
 }
 
 .nav-menu-link:hover{
@@ -117,18 +200,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .section-1 {
     width: 100%;
-    text-align: center; 
+    text-align: center;
     padding: 1%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     height: 85%;
     overflow-y: scroll;
-    
+
 }
 .section-2{
 
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -140,10 +223,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 
 .divisor-gris{
-    height: 4px; 
-    border: none; 
-    background-color: #ccc; 
-    margin: 10px 0; 
+    height: 4px;
+    border: none;
+    background-color: #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.divisor-verde{
+    height: 4px;
+    border: none;
+    background-color: #668066;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
@@ -160,7 +251,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 }
 .article-izquierda {
     text-align: left;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 .article-derecha {
@@ -171,14 +262,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .article-figure{
     text-align: center;
     margin: 10px 0;
-    
+
 }
 
 .article-imagen{
     max-height: 250px;
 }
 .article-caption{
-    
+
     text-align: center;
 }
 .article-link{
@@ -187,8 +278,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .article-texto{
     text-align: left;
-     text-align: justify;
-    
+    text-align: justify;
+
 }
 
 .tabla {
@@ -196,19 +287,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     border-collapse: collapse; /* Esto combina los bordes de las celdas */
     border-top: 3px solid #a3a3cc; /* Agrega un borde superior de color #a3a3cc */
     border-bottom: 3px solid #a3a3cc; /* Agrega un borde inferior de color #a3a3cc */
-   
-    
-    
+
+
+
 }
 
 .columna {
-    flex: 1; 
-    padding: 20px; 
+    flex: 1;
+    padding: 20px;
 }
 
 
 .columna:last-child {
-    flex: 1; 
+    flex: 1;
     text-align: center;
 }
 

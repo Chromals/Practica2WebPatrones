@@ -16,25 +16,25 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <a href="index.html" class="logo nav-link">ChromalTech</a>
                 <ul class="nav-menu" style="text-align:end">
                     <li class="nav-menu-item" >
-                        <a class="nav-menu-link" href="ejemplo7.html"> &LeftTriangleBar;</a>
+                        <a class="nav-menu-link" href="lanzamientos.html"> Lanzamientos</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="ejemplo2.html"> &RightTriangleBar;</a>
+                        <a class="nav-menu-link" href="Imagenes.html"> PC's</a>
                     </li>
                     <li class="nav-menu-item">
                         <a class="nav-menu-link" href="audios.html">Audios </a>
                     </li>
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="lanzamientos.html"> Videos</a>
+                        <a class="nav-menu-link" href="Torneos.html">Torneos</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="iFrames.html"> iFrame</a>
+                        <a class="nav-menu-link" href="iFrames.html">Sitios</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="Formulario.html"> formulario</a>
+                        <a class="nav-menu-link" href="Contacto.html">Contacto</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a class="nav-menu-link" href="Formulario.html"> formulario</a>
+                        <a class="nav-menu-link" href="Formulario.html">Perfil</a>
                     </li>
                 </ul>
             </nav>
@@ -42,14 +42,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <section class="section"> 
             <article>
                 <header>
-                    <h2>Incorporacion de solicitud de informacionw</h2>
+                    <h2 class="noticia-izquierda" style="padding-bottom: 15px">Su perfil</h2>
+                   
                 </header>
-                <form action="cliente/registro">
+                <form action="cliente/registro" class="form-simple">
                     <table border="0" cellspacing="5" cellpadding="5">
                         <tbody>
                             <tr>
-                                <td>Usuario</td>
-                                <td><input type="email" name="usuario" size="25" placeholder="Ingrese su email aqui" /></td>
+                                <td>Correo</td>
+                                <td><input type="email" name="Correo" size="25" placeholder="Ingrese su email aqui" /></td>
                             </tr>
                             <tr>
                                 <td>Clave</td>
@@ -59,10 +60,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 <td>Nombre</td>
                                 <td><input type="text" name="nombre" size="10" placeholder="Ingrese su nombre aqui" /></td>
                             </tr>
-                            <tr>
-                                <td>Color Preferido</td>
-                                <td><input type="color" name="color" /></td>
-                            </tr>
+                            
                             <tr>
                                 <td>Su foto</td>
                                 <td><input type="file" name="foto"  accept="image/*" /></td>
@@ -71,45 +69,32 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 <td>Telefono</td>
                                 <td><input type="tel" name="telefono" size="8" /></td>
                             </tr>
-                            <tr>
-                                <td>Rango Salarial</td>
-                                <td><input type="number" name="salario" min="400" max="10000" /></td>
-                            </tr>
-                            <tr>
-                                <td>Nivel de Satisfaccion</td>
-                                <td>Minimo 0<input type="range" name="satisfaccion" min="0" max="10" /></td>
-                            </tr>
+                           
                             <tr>
                                 <td>Direccion exacta</td>
                                 <td><textarea name="direccion" rows="4" cols="10"></textarea></td>
                             </tr>
-                            <tr>
-                                <td>Nivel Educativo</td>
-                                <td><select name="nivel" size="2">
-                                        <option value="0">Primaria Incompleta</option>
-                                        <option value="1">Primaria Completa</option>
-                                        <option value="2">Secundaria Completa</option>
-                                        <option value="3">Universidad Incompleta</option>
-                                        <option value="4">Universidad Completa</option>
-                                    </select></td>
-                            </tr>
+                            
                             <tr>
                                 <td>Acciones</td>
-                                <td><input type="reset" value="limpiar"></td>
-                                <td><input type="submit" value="Enviar"></td>
+                                <td>
+                                    <input type="reset" class="btn-reset" value="limpiar">
+                                    <input type="submit" class="btn-submit" value="Enviar">
+                                </td>
+                                
                             </tr>
                         </tbody>
                     </table>
-
                 </form>
+                
             </article>
             
             
             
             
         </section>
-        <footer>
-            <p>Derechos reservados por TechShop &COPY; 2023</p>
+       <footer class="footer">
+            <p style="padding-top: 10px">Denis Campos &COPY; ChromalTech Empresa Ficticia</p>
         </footer>
     </body>
 </html>
